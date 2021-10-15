@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--=============== FAVICON ===============-->
+  <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+  <!--=============== REMIX ICONS ===============-->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+  <!-- FontAwesome Icons -->
+  <link href="assets/fontAwesome/css/all.css" rel="stylesheet">
+
+  <!--=============== CSS ===============-->
+  <link rel="stylesheet" href="assets/css/contact.css">
+
+  <title>Fale Conosco | Canetando</title>
+</head>
+
+<body>
+  <main class="main">
+
+    <!-- Contact Form -->
+    <section class="contact section" id="contact">
+      <div class="contact__container container grid">
+        <div class="id1">
+          <a href="index.html"><img src="assets/img/logo.svg" class="logo" alt=""></a>
+          <h2 class="contact__title">Temos os melhores profissionais para ajudar você!</h2>
+          <p class="contact__description">Preencha corretamente as informações do formulário para que um de nossos
+            especialistas entre em contato.
+          </p>
+        </div>
+        <div class="id2">
+          <form class="contact-form" id="form" action="" method="POST">
+            <div class="contact__checkboxContainer">
+              <h3>Como podemos ajudá-lo?</h3>
+              <div class="contact__options">
+                <div class="contact__checkboxbtn">
+                  <label>
+                    <input type="checkbox" class="service" value="devSites"><span>Websites</span>
+                  </label>
+                </div>
+                <div class="contact__checkboxbtn">
+                  <label>
+                    <input type="checkbox" class="service" value="identidadeVisual"><span>Identidade Visual</span>
+                  </label>
+                </div>
+                <div class="contact__checkboxbtn">
+                  <label>
+                    <input type="checkbox" class="service" value="googleAds"><span>SEO/Google Ads</span>
+                  </label>
+                </div>
+                <div class="contact__checkboxbtn">
+                  <label>
+                    <input type="checkbox" class="service" value="midiasSociais"><span>Mídias Sociais</span>
+                  </label>
+                </div>
+              </div>
+              <div class="contact__options">
+                <div class="contact__checkboxbtn">
+                  <label>
+                    <input type="checkbox" class="service" value="faceinstaAds"><span>Facebook/Instagram Ads</span>
+                  </label>
+                </div>
+                <div class="contact__checkboxbtn">
+                  <label>
+                    <input type="checkbox" class="service" value="gráfica"><span>Material Gráfico</span>
+                  </label>
+                </div>
+                <div class="contact__checkboxbtn">
+                  <label>
+                    <input type="checkbox" class="service" value="canecas"><span>Canecas</span>
+                  </label>
+                </div>
+                <div class="contact__checkboxbtn">
+                  <label>
+                    <input type="checkbox" class="service" value="quadros"><span>Quadros</span>
+                  </label>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="contact__item">
+              <label for="name">Nome Completo*</label>
+              <input class="contact__textInput name" type="text" name="nome" placeholder="Nome Completo" required />
+            </div>
+            <div class="grid_item">
+              <div class="contact__item">
+                <label for="email">E-mail*</label>
+                <input class="contact__textInput email" type="email" name="email"
+                  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="example@example.com" required />
+              </div>
+              <div class="contact__item">
+                <label for="telefone">Telefone/Celular*</label>
+                <input class="contact__textInput phone" type="tel" id="telefone" name="telefone"
+                  pattern="\(\d{2}\)\s*\d{5}-\d{4}" maxlength="15" placeholder="(00) 0000-0000" required />
+              </div>
+            </div>
+
+            <div class="grid_item">
+              <div class="contact__item">
+                <label for="Empresa">Empresa</label>
+                <input class="contact__textInput company" type="text" name="Empresa"
+                  placeholder="Nome da sua empresa" />
+              </div>
+              <div class="contact__item">
+                <label for="conheceu">Como nos conheceu?</label>
+                <select name="conheceu" id="conheceu" class="contact__textInput" name="conheceu">
+                  <option class="origin" value disabled="disabled" selected>Selecione uma opção</option>
+                  <option class="origin" value="google">Pesquisa no Google</option>
+                  <option class="origin" value="facebook">Facebook</option>
+                  <option class="origin" value="instagram">Instagram</option>
+                  <option class="origin" value="indicacao">Indicação</option>
+                  <option class="origin" value="cliente">Já sou cliente</option>
+                  <option class="origin" value="outro">Outro</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="contact__item">
+              <label for="mensagem">Mensagem*</label>
+              <textarea class="contact__textInput contact__textArea message" type="text" name="mensagem"
+                placeholder="Quanto mais detalhes, melhor!" required></textarea>
+            </div>
+
+            <div class="contact__buttonArea">
+              <span>Ao enviar o formulário, eu declaro que estou de acordo com a Política de Privacidade.</span>
+              <button type="submit" name="enviar">Enviar formulário <i class="fas fa-chevron-right"></i>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div id="snackbar">Formulário enviado com sucesso. Em breve entraremos em contato.</div>
+    </section>
+
+  </main>
+
+  <!--=============== FOOTER ===============-->
+  <footer class="footer section">
+    <div class="footer__container container grid">
+      <div class="footer__content1">
+        <div>
+          <a href="#" class="footer__logo">
+            <img src="assets/img/logo.png" alt="">
+          </a>
+        </div>
+
+        <span>
+          A Canetando tem como foco<br />
+          desenvolver estratégias únicas<br />
+          para acelerar o crescimento do<br />
+          seu negócio.
+        </span>
+      </div>
+
+      <div class="footer__content2">
+        <h4 class="footer__title">Menu</h4>
+
+        <ul class="footer__links">
+          <li>
+            <a href="index.html" class="footer__link">Início</a>
+          </li>
+          <li>
+            <a href="index.html" class="footer__link">Serviços</a>
+          </li>
+          <li>
+            <a href="index.html" class="footer__link">Comece Agora</a>
+          </li>
+          <li>
+            <a href="index.html" class="footer__link">Portfólio</a>
+          </li>
+          <li>
+            <a href="#contact" class="footer__link">Fale Conosco</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer__content3">
+        <h4 class="footer__title">Telefone</h4>
+        <a href="https://api.whatsapp.com/send?phone=5521969592304" class="footer__link__Whatsapp"><i
+            class="fab fa-whatsapp"></i>
+          (21) 96959-2304</a>
+
+        <div class="footer__social">
+          <a href="https://www.facebook.com/canetandoartedigital" target="_blank" class="footer__social-link">
+            <i class="ri-facebook-fill"></i>
+          </a>
+          <a href="https://www.instagram.com/canetandoartedigital/" target="_blank" class="footer__social-link">
+            <i class="ri-instagram-line"></i>
+          </a>
+          <a href="https://twitter.com/" target="_blank" class="footer__social-link">
+            <i class="ri-twitter-line"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <p class="footer__copy">
+      <span class="footer__copy-link"> Canetando © 2021 Todos os Direitos Reservados</span>
+    </p>
+  </footer>
+
+  <!--=============== SCROLL UP ===============-->
+  <a href="#" class="scrollup" id="scroll-up">
+    <i class="ri-arrow-up-s-line scrollup__icon"></i>
+  </a>
+
+  <!--=============== SCROLL REVEAL ===============-->
+  <script src="https://unpkg.com/scrollreveal"></script>
+
+  <!-- Send Email -->
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+  <!-- Firebase -->
+  <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase.js"></script>
+  <!-- <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.1.3/firebase-app.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+      apiKey: "AIzaSyBEQ0BYpUMB8cWGZ5g8iuHD3yAsWVeT7AI",
+      authDomain: "testesendemail-2664c.firebaseapp.com",
+      databaseURL: "https://testesendemail-2664c-default-rtdb.firebaseio.com",
+      projectId: "testesendemail-2664c",
+      storageBucket: "testesendemail-2664c.appspot.com",
+      messagingSenderId: "843112139677",
+      appId: "1:843112139677:web:f242674c3a0c75ee2cbd74"
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+  </script> -->
+
+  <!--=============== MAIN JS ===============-->
+  <script src="assets/js/contact.js"></script>
+</body>
+
+</html>
